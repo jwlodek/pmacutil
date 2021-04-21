@@ -1,3 +1,0 @@
-pmacUtilApp/pmc/*.pmc           usr/share/epics-pmacutil-dev/pmc
-pmacUtilApp/protocol/*.proto    usr/lib/epics/protocol
-pmacUtilApp/Db/*.db             usr/lib/epics/db
