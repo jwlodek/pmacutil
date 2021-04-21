@@ -10,12 +10,17 @@
 
 TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 
-#If using the sequencer, uncomment this line:
-#SNCSEQ=/home/diamond/R3.14.7/prod/support/seq/2-0-10
+SUPPORT= /epics/src/support
 
-GENSUB=$(TOP)/../genSub
+ASYN=    $(SUPPORT)/asyn
+CALC=    $(SUPPORT)/calc
+MOTOR=   $(SUPPORT)/motor
+STREAMS= $(SUPPORT)/stream
+GENSUB=  $(SUPPORT)/genSub
+BUSY=    $(SUPPORT)/busy
+SNCSEQ=  $(SUPPORT)/seq
 
 # EPICS_BASE usually appears last so other apps can override stuff:
-EPICS_BASE=/usr/lib/epics
+EPICS_BASE=/epics/src/base
 
 -include $(TOP)/configure/RELEASE.private
